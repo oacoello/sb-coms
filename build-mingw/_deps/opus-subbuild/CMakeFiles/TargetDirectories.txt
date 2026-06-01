@@ -1,0 +1,3 @@
+C:/Users/oacoe/Documents/sb-coms/build-mingw/_deps/opus-subbuild/CMakeFiles/opus-populate.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/_deps/opus-subbuild/CMakeFiles/edit_cache.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/_deps/opus-subbuild/CMakeFiles/rebuild_cache.dir

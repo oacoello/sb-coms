@@ -1,0 +1,5 @@
+sb_coms_ptt_autogen/timestamp: \
+	C:/Users/oacoe/Documents/sb-coms/libs/ptt/CMakeLists.txt \
+	C:/Users/oacoe/Documents/sb-coms/libs/ptt/include/sb_coms/ptt/PushToTalkState.hpp \
+	C:/Users/oacoe/Documents/sb-coms/libs/ptt/src/PushToTalkState.cpp \
+	C:/Qt/Tools/CMake_64/bin/cmake.exe

@@ -1,0 +1,8 @@
+sb_coms_codec_autogen/timestamp: \
+	C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/ExternalProject/shared_internal_commands.cmake \
+	C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/FetchContent.cmake \
+	C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/FetchContent/CMakeLists.cmake.in \
+	C:/Users/oacoe/Documents/sb-coms/libs/codec/CMakeLists.txt \
+	C:/Users/oacoe/Documents/sb-coms/libs/codec/include/sb_coms/codec/OpusFrameCodec.hpp \
+	C:/Users/oacoe/Documents/sb-coms/libs/codec/src/OpusFrameCodec.cpp \
+	C:/Qt/Tools/CMake_64/bin/cmake.exe
