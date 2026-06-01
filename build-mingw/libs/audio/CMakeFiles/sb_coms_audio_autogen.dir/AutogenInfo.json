@@ -23,6 +23,12 @@
 			"MU",
 			"K4JHXEZUQL/moc_AudioLoopback.cpp",
 			null
+		],
+		[
+			"C:/Users/oacoe/Documents/sb-coms/libs/audio/include/sb_coms/audio/NetworkAudioClient.hpp",
+			"MU",
+			"K4JHXEZUQL/moc_NetworkAudioClient.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -55,6 +61,7 @@
 		"C:/Users/oacoe/Documents/sb-coms/libs/audio/include",
 		"C:/Users/oacoe/Documents/sb-coms/libs/codec/include",
 		"C:/Users/oacoe/Documents/sb-coms/build-mingw/_deps/opus-src/include",
+		"C:/Users/oacoe/Documents/sb-coms/libs/protocol/include",
 		"C:/Qt/6.11.1/mingw_64/include/QtMultimedia",
 		"C:/Qt/6.11.1/mingw_64/include",
 		"C:/Qt/6.11.1/mingw_64/include/QtCore",
@@ -108,6 +115,11 @@
 		],
 		[
 			"C:/Users/oacoe/Documents/sb-coms/libs/audio/src/AudioLoopback.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/oacoe/Documents/sb-coms/libs/audio/src/NetworkAudioClient.cpp",
 			"MU",
 			null
 		]

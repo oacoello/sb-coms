@@ -8,6 +8,7 @@ target_link_libraries(sb-coms-desktop
     PRIVATE
         Qt6::Widgets
         Qt6::Multimedia
+        Qt6::Network
         sb_coms_audio
         sb_coms_codec
         sb_coms_ptt

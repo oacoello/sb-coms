@@ -1,0 +1,5 @@
+sb-coms-relay_autogen/timestamp: \
+	C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/windows/app.exe.manifest.in \
+	C:/Users/oacoe/Documents/sb-coms/servers/relay-native/CMakeLists.txt \
+	C:/Users/oacoe/Documents/sb-coms/servers/relay-native/src/main.cpp \
+	C:/Qt/Tools/CMake_64/bin/cmake.exe

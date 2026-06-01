@@ -1,0 +1,6 @@
+sb_coms_protocol_autogen/timestamp: \
+	C:/Users/oacoe/Documents/sb-coms/libs/protocol/CMakeLists.txt \
+	C:/Users/oacoe/Documents/sb-coms/libs/protocol/include/sb_coms/protocol/AudioPacket.hpp \
+	C:/Users/oacoe/Documents/sb-coms/libs/protocol/include/sb_coms/protocol/AudioPacketCodec.hpp \
+	C:/Users/oacoe/Documents/sb-coms/libs/protocol/src/AudioPacketCodec.cpp \
+	C:/Qt/Tools/CMake_64/bin/cmake.exe

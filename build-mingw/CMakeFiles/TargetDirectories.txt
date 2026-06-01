@@ -6,6 +6,7 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/CMakeFiles/list_install_components.
 C:/Users/oacoe/Documents/sb-coms/build-mingw/CMakeFiles/install.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/CMakeFiles/install/local.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/CMakeFiles/install/strip.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/sb_coms_protocol.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/package.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/package_source.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/edit_cache.dir
@@ -14,6 +15,8 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/list_insta
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/install.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/install/local.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/install/strip.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/sb_coms_protocol_autogen_timestamp_deps.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/protocol/CMakeFiles/sb_coms_protocol_autogen.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/codec/CMakeFiles/sb_coms_codec.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/codec/CMakeFiles/package.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/codec/CMakeFiles/package_source.dir
@@ -69,3 +72,14 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/CMakeFiles/install/loc
 C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/CMakeFiles/install/strip.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/CMakeFiles/sb-coms-desktop_autogen_timestamp_deps.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/CMakeFiles/sb-coms-desktop_autogen.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/sb-coms-relay.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/package.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/package_source.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/edit_cache.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/rebuild_cache.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/list_install_components.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/install.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/install/local.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/install/strip.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/sb-coms-relay_autogen_timestamp_deps.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/servers/relay-native/CMakeFiles/sb-coms-relay_autogen.dir

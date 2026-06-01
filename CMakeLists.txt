@@ -14,10 +14,11 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Multimedia)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Multimedia Network)
 
 add_subdirectory(libs/protocol)
 add_subdirectory(libs/codec)
 add_subdirectory(libs/audio)
 add_subdirectory(libs/ptt)
 add_subdirectory(apps/desktop)
+add_subdirectory(servers/relay-native)

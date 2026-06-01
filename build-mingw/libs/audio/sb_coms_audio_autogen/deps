@@ -1,12 +1,15 @@
 sb_coms_audio_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QByteArray \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/QTimer \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/q20iterator.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20memory.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20type_traits.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q23type_traits.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qalgorithms.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qanystringview.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qarraydata.h \
@@ -16,6 +19,7 @@ sb_coms_audio_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qatomic.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qatomic_cxx11.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qbasicatomic.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qbasictimer.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qbindingstorage.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qbytearray.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -33,6 +37,8 @@ sb_coms_audio_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qcontainertools_impl.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qdarwinhelpers.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qdatastream.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qdeadlinetimer.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qeventloop.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qexceptionhandling.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qflags.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qfloat16.h \
@@ -43,6 +49,7 @@ sb_coms_audio_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qglobal.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qglobalstatic.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qhashfunctions.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qiodevice.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qiodevicebase.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qiterable.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qiterator.h \
@@ -67,6 +74,7 @@ sb_coms_audio_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qscopedpointer.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qscopeguard.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qshareddata.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qspan.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qstdlibdetection.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qstring.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qstringalgorithms.h \
@@ -92,6 +100,7 @@ sb_coms_audio_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qtdeprecationmarkers.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qtformat_impl.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qtimer.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qtmetamacros.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qtnoop.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -114,6 +123,14 @@ sb_coms_audio_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
 	C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
 	C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/QHostAddress \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/QUdpSocket \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qabstractsocket.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qhostaddress.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qtnetwork-config.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qtnetworkexports.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qudpsocket.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic \
@@ -227,6 +244,7 @@ sb_coms_audio_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/charconv \
@@ -365,7 +383,10 @@ sb_coms_audio_autogen/timestamp: \
 	C:/Users/oacoe/Documents/sb-coms/libs/audio/CMakeLists.txt \
 	C:/Users/oacoe/Documents/sb-coms/libs/audio/include/sb_coms/audio/AudioDeviceService.hpp \
 	C:/Users/oacoe/Documents/sb-coms/libs/audio/include/sb_coms/audio/AudioLoopback.hpp \
+	C:/Users/oacoe/Documents/sb-coms/libs/audio/include/sb_coms/audio/NetworkAudioClient.hpp \
 	C:/Users/oacoe/Documents/sb-coms/libs/audio/src/AudioDeviceService.cpp \
 	C:/Users/oacoe/Documents/sb-coms/libs/audio/src/AudioLoopback.cpp \
+	C:/Users/oacoe/Documents/sb-coms/libs/audio/src/NetworkAudioClient.cpp \
 	C:/Users/oacoe/Documents/sb-coms/libs/codec/include/sb_coms/codec/OpusFrameCodec.hpp \
+	C:/Users/oacoe/Documents/sb-coms/libs/protocol/include/sb_coms/protocol/AudioPacket.hpp \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

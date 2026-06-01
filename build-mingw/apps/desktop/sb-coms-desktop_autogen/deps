@@ -1,6 +1,7 @@
 sb-coms-desktop_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QByteArray \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \
@@ -52,6 +53,7 @@ sb-coms-desktop_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qglobalstatic.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qhash.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qhashfunctions.h \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/qiodevice.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qiodevicebase.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qiterable.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qiterator.h \
@@ -160,6 +162,14 @@ sb-coms-desktop_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
 	C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
 	C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/QHostAddress \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/QUdpSocket \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qabstractsocket.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qhostaddress.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qtnetwork-config.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qtnetworkexports.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+	C:/Qt/6.11.1/mingw_64/include/QtNetwork/qudpsocket.h \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -428,6 +438,6 @@ sb-coms-desktop_autogen/timestamp: \
 	C:/Users/oacoe/Documents/sb-coms/apps/desktop/src/MainWindow.hpp \
 	C:/Users/oacoe/Documents/sb-coms/apps/desktop/src/main.cpp \
 	C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autogen/moc_predefs.h \
-	C:/Users/oacoe/Documents/sb-coms/libs/audio/include/sb_coms/audio/AudioLoopback.hpp \
+	C:/Users/oacoe/Documents/sb-coms/libs/audio/include/sb_coms/audio/NetworkAudioClient.hpp \
 	C:/Users/oacoe/Documents/sb-coms/libs/codec/include/sb_coms/codec/OpusFrameCodec.hpp \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

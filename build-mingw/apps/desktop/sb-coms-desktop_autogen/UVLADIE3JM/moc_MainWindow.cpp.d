@@ -2,6 +2,8 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autoge
   C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autogen/moc_predefs.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QByteArray \
   C:/Qt/6.11.1/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20functional.h \
@@ -11,6 +13,7 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autoge
   C:/Qt/6.11.1/mingw_64/include/QtCore/q20utility.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q23type_traits.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qalloc.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qanystringview.h \
@@ -21,6 +24,7 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autoge
   C:/Qt/6.11.1/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -40,8 +44,10 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autoge
   C:/Qt/6.11.1/mingw_64/include/QtCore/qcontiguouscache.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qdebug.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qendian.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qeventloop.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qflags.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qfloat16.h \
@@ -53,6 +59,7 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autoge
   C:/Qt/6.11.1/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qiterator.h \
@@ -114,6 +121,7 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autoge
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtextstream.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtformat_impl.h \
+  C:/Qt/6.11.1/mingw_64/include/QtCore/qtimer.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtnoop.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -161,6 +169,14 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autoge
   C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
   C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
   C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
+  C:/Qt/6.11.1/mingw_64/include/QtNetwork/QHostAddress \
+  C:/Qt/6.11.1/mingw_64/include/QtNetwork/QUdpSocket \
+  C:/Qt/6.11.1/mingw_64/include/QtNetwork/qabstractsocket.h \
+  C:/Qt/6.11.1/mingw_64/include/QtNetwork/qhostaddress.h \
+  C:/Qt/6.11.1/mingw_64/include/QtNetwork/qtnetwork-config.h \
+  C:/Qt/6.11.1/mingw_64/include/QtNetwork/qtnetworkexports.h \
+  C:/Qt/6.11.1/mingw_64/include/QtNetwork/qtnetworkglobal.h \
+  C:/Qt/6.11.1/mingw_64/include/QtNetwork/qudpsocket.h \
   C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
@@ -423,5 +439,6 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop_autoge
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
-  C:/Users/oacoe/Documents/sb-coms/libs/audio/include/sb_coms/audio/AudioLoopback.hpp \
-  C:/Users/oacoe/Documents/sb-coms/libs/codec/include/sb_coms/codec/OpusFrameCodec.hpp
+  C:/Users/oacoe/Documents/sb-coms/libs/audio/include/sb_coms/audio/NetworkAudioClient.hpp \
+  C:/Users/oacoe/Documents/sb-coms/libs/codec/include/sb_coms/codec/OpusFrameCodec.hpp \
+  C:/Users/oacoe/Documents/sb-coms/libs/protocol/include/sb_coms/protocol/AudioPacket.hpp
