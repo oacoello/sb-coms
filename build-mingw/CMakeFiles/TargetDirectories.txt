@@ -61,6 +61,17 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/ptt/CMakeFiles/install/local.d
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/ptt/CMakeFiles/install/strip.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/ptt/CMakeFiles/sb_coms_ptt_autogen_timestamp_deps.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/ptt/CMakeFiles/sb_coms_ptt_autogen.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/sb_coms_relay.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/package.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/package_source.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/edit_cache.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/rebuild_cache.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/list_install_components.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/install.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/install/local.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/install/strip.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/sb_coms_relay_autogen_timestamp_deps.dir
+C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/CMakeFiles/sb_coms_relay_autogen.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/CMakeFiles/sb-coms-desktop.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/CMakeFiles/package.dir
 C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/CMakeFiles/package_source.dir

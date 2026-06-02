@@ -44,7 +44,12 @@ template <> constexpr inline auto sb_coms::audio::NetworkAudioClient::qt_create_
         "message",
         "statusChanged",
         "participantsChanged",
-        "participants"
+        "participants",
+        "inputLevelChanged",
+        "percent",
+        "capturedPcm",
+        "pcm",
+        "receivedPcm"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -59,6 +64,18 @@ template <> constexpr inline auto sb_coms::audio::NetworkAudioClient::qt_create_
         // Signal 'participantsChanged'
         QtMocHelpers::SignalData<void(const QStringList &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QStringList, 6 },
+        }}),
+        // Signal 'inputLevelChanged'
+        QtMocHelpers::SignalData<void(int)>(7, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 8 },
+        }}),
+        // Signal 'capturedPcm'
+        QtMocHelpers::SignalData<void(const QByteArray &)>(9, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QByteArray, 10 },
+        }}),
+        // Signal 'receivedPcm'
+        QtMocHelpers::SignalData<void(const QByteArray &)>(11, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QByteArray, 10 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -86,6 +103,9 @@ void sb_coms::audio::NetworkAudioClient::qt_static_metacall(QObject *_o, QMetaOb
         case 0: _t->errorOccurred((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         case 1: _t->statusChanged((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         case 2: _t->participantsChanged((*reinterpret_cast<std::add_pointer_t<QStringList>>(_a[1]))); break;
+        case 3: _t->inputLevelChanged((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 4: _t->capturedPcm((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
+        case 5: _t->receivedPcm((*reinterpret_cast<std::add_pointer_t<QByteArray>>(_a[1]))); break;
         default: ;
         }
     }
@@ -95,6 +115,12 @@ void sb_coms::audio::NetworkAudioClient::qt_static_metacall(QObject *_o, QMetaOb
         if (QtMocHelpers::indexOfMethod<void (NetworkAudioClient::*)(const QString & )>(_a, &NetworkAudioClient::statusChanged, 1))
             return;
         if (QtMocHelpers::indexOfMethod<void (NetworkAudioClient::*)(const QStringList & )>(_a, &NetworkAudioClient::participantsChanged, 2))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (NetworkAudioClient::*)(int )>(_a, &NetworkAudioClient::inputLevelChanged, 3))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (NetworkAudioClient::*)(const QByteArray & )>(_a, &NetworkAudioClient::capturedPcm, 4))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (NetworkAudioClient::*)(const QByteArray & )>(_a, &NetworkAudioClient::receivedPcm, 5))
             return;
     }
 }
@@ -118,14 +144,14 @@ int sb_coms::audio::NetworkAudioClient::qt_metacall(QMetaObject::Call _c, int _i
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 6;
     }
     return _id;
 }
@@ -146,5 +172,23 @@ void sb_coms::audio::NetworkAudioClient::statusChanged(const QString & _t1)
 void sb_coms::audio::NetworkAudioClient::participantsChanged(const QStringList & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
+}
+
+// SIGNAL 3
+void sb_coms::audio::NetworkAudioClient::inputLevelChanged(int _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1);
+}
+
+// SIGNAL 4
+void sb_coms::audio::NetworkAudioClient::capturedPcm(const QByteArray & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 4, nullptr, _t1);
+}
+
+// SIGNAL 5
+void sb_coms::audio::NetworkAudioClient::receivedPcm(const QByteArray & _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 5, nullptr, _t1);
 }
 QT_WARNING_POP

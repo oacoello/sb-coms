@@ -12,6 +12,9 @@
 #include <QSet>
 
 #include <exception>
+#include <algorithm>
+#include <cmath>
+#include <cstdint>
 #include <utility>
 
 namespace sb_coms::audio {
@@ -36,7 +39,7 @@ NetworkAudioClient::~NetworkAudioClient()
 void NetworkAudioClient::setRelayEndpoint(const QHostAddress& host, quint16 port)
 {
     if (started_) {
-        emit errorOccurred("Relay endpoint cannot be changed while connected.");
+        emit errorOccurred("No se puede cambiar el repetidor mientras está conectado.");
         return;
     }
 
@@ -47,13 +50,13 @@ void NetworkAudioClient::setRelayEndpoint(const QHostAddress& host, quint16 port
 void NetworkAudioClient::setChannel(QString channel)
 {
     if (started_) {
-        emit errorOccurred("Channel cannot be changed while connected.");
+        emit errorOccurred("No se puede cambiar el canal mientras está conectado.");
         return;
     }
 
     channel = channel.trimmed();
     if (channel.isEmpty()) {
-        emit errorOccurred("Channel cannot be empty.");
+        emit errorOccurred("El canal no puede estar vacío.");
         return;
     }
 
@@ -70,6 +73,17 @@ void NetworkAudioClient::setDisplayName(QString displayName)
     displayName_ = std::move(displayName);
 }
 
+void NetworkAudioClient::setAudioDevices(QByteArray inputDeviceId, QByteArray outputDeviceId)
+{
+    if (started_) {
+        emit errorOccurred("No se pueden cambiar los dispositivos mientras está conectado.");
+        return;
+    }
+
+    inputDeviceId_ = std::move(inputDeviceId);
+    outputDeviceId_ = std::move(outputDeviceId);
+}
+
 void NetworkAudioClient::start()
 {
     if (started_) {
@@ -77,7 +91,7 @@ void NetworkAudioClient::start()
     }
 
     if (!socket_.bind(QHostAddress::AnyIPv4, 0)) {
-        emit errorOccurred("Could not bind UDP client socket.");
+        emit errorOccurred("No se pudo abrir el socket UDP del cliente.");
         return;
     }
 
@@ -85,7 +99,20 @@ void NetworkAudioClient::start()
     sendHello();
     heartbeatTimer_.start();
     started_ = true;
-    emit statusChanged("Connected to " + relayEndpointLabel() + " / " + channel_);
+    emit statusChanged("Conectado a " + relayEndpointLabel() + " / " + channel_);
+}
+
+void NetworkAudioClient::disconnectFromRelay()
+{
+    sendLeave();
+    stopTransmit();
+    heartbeatTimer_.stop();
+    socket_.close();
+    sink_.reset();
+    output_ = nullptr;
+    started_ = false;
+    emit participantsChanged({});
+    emit statusChanged("Desconectado");
 }
 
 void NetworkAudioClient::startTransmit()
@@ -96,9 +123,9 @@ void NetworkAudioClient::startTransmit()
         return;
     }
 
-    const QAudioDevice inputDevice = QMediaDevices::defaultAudioInput();
+    const QAudioDevice inputDevice = selectedInputDevice();
     if (inputDevice.isNull()) {
-        emit errorOccurred("No input audio device found.");
+        emit errorOccurred("No se encontró micrófono.");
         return;
     }
 
@@ -111,7 +138,7 @@ void NetworkAudioClient::startTransmit()
 
     if (input_ == nullptr) {
         stopTransmit();
-        emit errorOccurred("Could not start microphone capture.");
+        emit errorOccurred("No se pudo iniciar la captura del micrófono.");
         return;
     }
 
@@ -129,6 +156,12 @@ void NetworkAudioClient::stopTransmit()
     source_.reset();
     pendingPcm_.clear();
     transmitting_ = false;
+    emit inputLevelChanged(0);
+}
+
+void NetworkAudioClient::setDeafened(bool deafened)
+{
+    deafened_ = deafened;
 }
 
 bool NetworkAudioClient::isTransmitting() const
@@ -148,15 +181,37 @@ void NetworkAudioClient::configureFormat()
     format_.setSampleFormat(QAudioFormat::Int16);
 }
 
+QAudioDevice NetworkAudioClient::selectedInputDevice() const
+{
+    for (const QAudioDevice& device : QMediaDevices::audioInputs()) {
+        if (!inputDeviceId_.isEmpty() && device.id() == inputDeviceId_) {
+            return device;
+        }
+    }
+
+    return QMediaDevices::defaultAudioInput();
+}
+
+QAudioDevice NetworkAudioClient::selectedOutputDevice() const
+{
+    for (const QAudioDevice& device : QMediaDevices::audioOutputs()) {
+        if (!outputDeviceId_.isEmpty() && device.id() == outputDeviceId_) {
+            return device;
+        }
+    }
+
+    return QMediaDevices::defaultAudioOutput();
+}
+
 void NetworkAudioClient::startPlayback()
 {
     if (sink_) {
         return;
     }
 
-    const QAudioDevice outputDevice = QMediaDevices::defaultAudioOutput();
+    const QAudioDevice outputDevice = selectedOutputDevice();
     if (outputDevice.isNull()) {
-        emit errorOccurred("No output audio device found.");
+        emit errorOccurred("No se encontró dispositivo de salida.");
         return;
     }
 
@@ -165,14 +220,14 @@ void NetworkAudioClient::startPlayback()
 
     if (output_ == nullptr) {
         sink_.reset();
-        emit errorOccurred("Could not start audio playback.");
+        emit errorOccurred("No se pudo iniciar la reproducción de audio.");
     }
 }
 
 void NetworkAudioClient::sendHello()
 {
     sendControlPacket(sb_coms::protocol::PacketType::Hello);
-    emit statusChanged("Registered with " + relayEndpointLabel() + " / " + channel_);
+    emit statusChanged("Registrado en " + relayEndpointLabel() + " / " + channel_);
 }
 
 void NetworkAudioClient::sendHeartbeat()
@@ -230,6 +285,8 @@ void NetworkAudioClient::pumpMicrophone()
         return;
     }
 
+    emitInputLevel(audio);
+    emit capturedPcm(audio);
     pendingPcm_.append(audio);
 
     while (pendingPcm_.size() >= sb_coms::codec::OpusFrameCodec::PcmFrameBytes) {
@@ -244,6 +301,27 @@ void NetworkAudioClient::pumpMicrophone()
             return;
         }
     }
+}
+
+void NetworkAudioClient::emitInputLevel(const QByteArray& pcm)
+{
+    if (pcm.size() < static_cast<int>(sizeof(std::int16_t))) {
+        emit inputLevelChanged(0);
+        return;
+    }
+
+    const auto* samples = reinterpret_cast<const std::int16_t*>(pcm.constData());
+    const int sampleCount = pcm.size() / static_cast<int>(sizeof(std::int16_t));
+    double sumSquares = 0.0;
+
+    for (int index = 0; index < sampleCount; ++index) {
+        const double normalized = static_cast<double>(samples[index]) / 32768.0;
+        sumSquares += normalized * normalized;
+    }
+
+    const double rms = std::sqrt(sumSquares / static_cast<double>(sampleCount));
+    const int percent = std::clamp(static_cast<int>(rms * 300.0), 0, 100);
+    emit inputLevelChanged(percent);
 }
 
 void NetworkAudioClient::receivePackets()
@@ -282,8 +360,9 @@ void NetworkAudioClient::receivePackets()
         try {
             const QByteArray opusPacket(reinterpret_cast<const char*>(packet.payload.data()), static_cast<qsizetype>(packet.payload.size()));
             const QByteArray decodedPcm = codec_.decodePacket(opusPacket);
+            emit receivedPcm(decodedPcm);
 
-            if (output_ != nullptr) {
+            if (output_ != nullptr && !deafened_) {
                 output_->write(decodedPcm);
             }
         } catch (const std::exception& error) {

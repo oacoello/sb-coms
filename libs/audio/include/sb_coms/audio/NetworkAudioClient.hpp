@@ -2,6 +2,7 @@
 
 #include <QObject>
 #include <QAudioFormat>
+#include <QAudioDevice>
 #include <QByteArray>
 #include <QHostAddress>
 #include <QTimer>
@@ -29,9 +30,12 @@ public:
     void setRelayEndpoint(const QHostAddress& host, quint16 port);
     void setChannel(QString channel);
     void setDisplayName(QString displayName);
+    void setAudioDevices(QByteArray inputDeviceId, QByteArray outputDeviceId);
     void start();
+    void disconnectFromRelay();
     void startTransmit();
     void stopTransmit();
+    void setDeafened(bool deafened);
 
     [[nodiscard]] bool isTransmitting() const;
     [[nodiscard]] QString relayEndpointLabel() const;
@@ -40,6 +44,9 @@ signals:
     void errorOccurred(const QString& message);
     void statusChanged(const QString& message);
     void participantsChanged(const QStringList& participants);
+    void inputLevelChanged(int percent);
+    void capturedPcm(const QByteArray& pcm);
+    void receivedPcm(const QByteArray& pcm);
 
 private:
     QAudioFormat format_;
@@ -49,6 +56,8 @@ private:
     quint16 relayPort_ = 50000;
     QString channel_ = "dispatch";
     QString displayName_ = "Client";
+    QByteArray inputDeviceId_;
+    QByteArray outputDeviceId_;
 
     std::unique_ptr<QAudioSource> source_;
     std::unique_ptr<QAudioSink> sink_;
@@ -61,8 +70,11 @@ private:
     std::uint32_t sequence_ = 0;
     bool started_ = false;
     bool transmitting_ = false;
+    bool deafened_ = false;
 
     void configureFormat();
+    [[nodiscard]] QAudioDevice selectedInputDevice() const;
+    [[nodiscard]] QAudioDevice selectedOutputDevice() const;
     void startPlayback();
     void sendHello();
     void sendHeartbeat();
@@ -70,6 +82,7 @@ private:
     void sendControlPacket(sb_coms::protocol::PacketType type);
     void sendAudioPacket(const QByteArray& packet);
     void pumpMicrophone();
+    void emitInputLevel(const QByteArray& pcm);
     void receivePackets();
 };
 

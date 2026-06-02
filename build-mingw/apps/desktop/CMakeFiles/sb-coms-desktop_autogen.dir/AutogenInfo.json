@@ -8,7 +8,8 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"C:/Users/oacoe/Documents/sb-coms/apps/desktop/CMakeLists.txt",
-		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/windows/app.exe.manifest.in"
+		"C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6/windows/app.exe.manifest.in",
+		"C:/Users/oacoe/Documents/sb-coms/apps/desktop/resources/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/oacoe/Documents/sb-coms",
 	"CROSS_CONFIG" : false,
@@ -20,6 +21,18 @@
 			"C:/Users/oacoe/Documents/sb-coms/apps/desktop/src/MainWindow.hpp",
 			"MU",
 			"UVLADIE3JM/moc_MainWindow.cpp",
+			null
+		],
+		[
+			"C:/Users/oacoe/Documents/sb-coms/apps/desktop/src/SpectrumWidget.hpp",
+			"MU",
+			"UVLADIE3JM/moc_SpectrumWidget.cpp",
+			null
+		],
+		[
+			"C:/Users/oacoe/Documents/sb-coms/apps/desktop/src/WavRecorder.hpp",
+			"MU",
+			"UVLADIE3JM/moc_WavRecorder.cpp",
 			null
 		]
 	],
@@ -57,6 +70,7 @@
 		"C:/Users/oacoe/Documents/sb-coms/build-mingw/_deps/opus-src/include",
 		"C:/Users/oacoe/Documents/sb-coms/libs/protocol/include",
 		"C:/Users/oacoe/Documents/sb-coms/libs/ptt/include",
+		"C:/Users/oacoe/Documents/sb-coms/libs/relay/include",
 		"C:/Qt/6.11.1/mingw_64/include/QtCore",
 		"C:/Qt/6.11.1/mingw_64/include",
 		"C:/Qt/6.11.1/mingw_64/mkspecs/win32-g++",
@@ -106,6 +120,16 @@
 	[
 		[
 			"C:/Users/oacoe/Documents/sb-coms/apps/desktop/src/MainWindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/oacoe/Documents/sb-coms/apps/desktop/src/SpectrumWidget.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/oacoe/Documents/sb-coms/apps/desktop/src/WavRecorder.cpp",
 			"MU",
 			null
 		],

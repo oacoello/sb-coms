@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.24)
 
 project(sb-coms
-    VERSION 0.1.0
+    VERSION 0.3.1
     DESCRIPTION "Native cross-platform push-to-talk desktop application"
     LANGUAGES CXX
 )
@@ -20,5 +20,6 @@ add_subdirectory(libs/protocol)
 add_subdirectory(libs/codec)
 add_subdirectory(libs/audio)
 add_subdirectory(libs/ptt)
+add_subdirectory(libs/relay)
 add_subdirectory(apps/desktop)
 add_subdirectory(servers/relay-native)

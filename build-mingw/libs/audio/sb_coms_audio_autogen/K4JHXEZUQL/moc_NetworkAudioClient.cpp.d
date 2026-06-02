@@ -119,8 +119,12 @@ C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/audio/sb_coms_audio_autogen/K4
   C:/Qt/6.11.1/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.11.1/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
+  C:/Qt/6.11.1/mingw_64/include/QtMultimedia/QAudioDevice \
   C:/Qt/6.11.1/mingw_64/include/QtMultimedia/QAudioFormat \
+  C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qaudio.h \
+  C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qaudiodevice.h \
   C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qaudioformat.h \
+  C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtaudio.h \
   C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
   C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
   C:/Qt/6.11.1/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \

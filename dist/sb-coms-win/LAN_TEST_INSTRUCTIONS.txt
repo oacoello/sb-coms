@@ -1,0 +1,41 @@
+# sb-coms LAN Test Instructions
+
+## Same WiFi test
+
+1. Extract this folder on both laptops.
+2. On ONE laptop only, open `sb-coms.exe`.
+3. In that app, click `Start Local Relay`.
+4. Find that laptop's LAN IP with PowerShell:
+
+   ipconfig
+
+   Look for the WiFi adapter's IPv4 address, for example `192.168.1.50`.
+
+5. On both laptops, open `sb-coms.exe`.
+6. Use the same settings on both clients:
+
+   Relay host: <relay laptop LAN IP>
+   Relay port: 50000
+   Channel: dispatch
+
+7. Click `Connect` on both.
+8. Hold `Hold to Talk` on one laptop and speak.
+
+## Windows Firewall
+
+If the second laptop cannot connect, allow UDP port 50000 on the relay laptop:
+
+- Windows Defender Firewall
+- Advanced settings
+- Inbound Rules
+- New Rule
+- Port
+- UDP
+- Specific local ports: 50000
+- Allow the connection
+
+## Notes
+
+- Do not start local relay on both laptops unless they use different ports.
+- Voice uses UDP, not TCP/WebSocket.
+- Keep both clients on the same channel to hear each other.

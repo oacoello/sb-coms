@@ -40,6 +40,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
+		"C:/Users/oacoe/Documents/sb-coms/libs/relay/include",
 		"C:/Users/oacoe/Documents/sb-coms/libs/protocol/include",
 		"C:/Qt/6.11.1/mingw_64/include/QtCore",
 		"C:/Qt/6.11.1/mingw_64/include",

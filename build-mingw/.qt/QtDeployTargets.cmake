@@ -8,6 +8,8 @@ set(__QT_DEPLOY_TARGET_sb_coms_audio_FILE C:/Users/oacoe/Documents/sb-coms/build
 set(__QT_DEPLOY_TARGET_sb_coms_audio_TYPE STATIC_LIBRARY)
 set(__QT_DEPLOY_TARGET_sb_coms_ptt_FILE C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/ptt/libsb_coms_ptt.a)
 set(__QT_DEPLOY_TARGET_sb_coms_ptt_TYPE STATIC_LIBRARY)
+set(__QT_DEPLOY_TARGET_sb_coms_relay_FILE C:/Users/oacoe/Documents/sb-coms/build-mingw/libs/relay/libsb_coms_relay.a)
+set(__QT_DEPLOY_TARGET_sb_coms_relay_TYPE STATIC_LIBRARY)
 set(__QT_DEPLOY_TARGET_sb-coms-desktop_FILE C:/Users/oacoe/Documents/sb-coms/build-mingw/apps/desktop/sb-coms-desktop.exe)
 set(__QT_DEPLOY_TARGET_sb-coms-desktop_TYPE EXECUTABLE)
 set(__QT_DEPLOY_TARGET_sb-coms-desktop_RUNTIME_DLLS C:/Qt/6.11.1/mingw_64/bin/Qt6Widgets.dll;C:/Qt/6.11.1/mingw_64/bin/Qt6Multimedia.dll;C:/Qt/6.11.1/mingw_64/bin/Qt6Gui.dll;C:/Qt/6.11.1/mingw_64/bin/Qt6Concurrent.dll;C:/Qt/6.11.1/mingw_64/bin/Qt6Network.dll;C:/Qt/6.11.1/mingw_64/bin/Qt6Core.dll)

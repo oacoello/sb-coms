@@ -3,11 +3,16 @@
 #include <QApplication>
 #include <QCommandLineOption>
 #include <QCommandLineParser>
+#include <QIcon>
 
 int main(int argc, char* argv[])
 {
     QApplication app(argc, argv);
+    QApplication::setOrganizationName("sb-coms");
+    QApplication::setOrganizationDomain("sb-coms.local");
     QApplication::setApplicationName("sb-coms");
+    QApplication::setApplicationVersion("0.3.1");
+    QApplication::setWindowIcon(QIcon(":/icons/icon_comms.png"));
 
     QCommandLineParser parser;
     parser.setApplicationDescription("sb-coms desktop client");
@@ -15,15 +20,15 @@ int main(int argc, char* argv[])
 
     QCommandLineOption instanceOption(
         QStringList{"i", "instance"},
-        "Human-readable instance label, useful when running multiple clients.",
+        "Etiqueta legible para distinguir múltiples clientes.",
         "name",
-        "Client"
+        "Cliente"
     );
     parser.addOption(instanceOption);
     parser.process(app);
 
     const QString instanceName = parser.value(instanceOption);
-    QApplication::setApplicationDisplayName("sb-coms " + instanceName);
+    QApplication::setApplicationDisplayName("SB Comms " + instanceName);
 
     MainWindow window(instanceName);
     window.show();
