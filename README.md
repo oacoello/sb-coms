@@ -1,3 +1,5 @@
+<img width="849" height="310" alt="asdfasdfads" src="https://github.com/user-attachments/assets/8c3b6ecb-db7e-4cdc-82fb-03944f6257ed" />
+
 # Comns Santa Barbara (sb-coms)
 App nativa para Windows y Linux de comunicación por "pulsar para hablar" para misiones de artillería.
 
@@ -24,3 +26,8 @@ Comprobar que la comunicación local push-to-talk funciona antes de añadir movi
 4. Se pueden crear y eliminar canales de voz.
 <img width="872" height="554" alt="image" src="https://github.com/user-attachments/assets/aaed35af-8346-4f06-a427-aac6c7183628" />
 
+## Tercer avance (Junio 2, 2026)
+1. Se agrega guia rápida para usuarios nuevos.
+2. Se añaden canales predeterminados para asuntos de artillería.
+3. Se añaden perfiles (identificadores) predeterminados para roles de artillería.
+4. Correcciones y arreglo de UI y operatividad.
