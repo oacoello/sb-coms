@@ -31,3 +31,5 @@ Comprobar que la comunicación local push-to-talk funciona antes de añadir movi
 2. Se añaden canales predeterminados para asuntos de artillería.
 3. Se añaden perfiles (identificadores) predeterminados para roles de artillería.
 4. Correcciones y arreglo de UI y operatividad.
+5. <img width="1199" height="775" alt="image" src="https://github.com/user-attachments/assets/8c59d7f5-c25b-4d17-b3fa-a34949f519f5" />
+
