@@ -1,4 +1,4 @@
-<img width="849" height="310" alt="asdfasdfads" src="https://github.com/user-attachments/assets/8c3b6ecb-db7e-4cdc-82fb-03944f6257ed" />
+<img width="849" height="310" alt="asdfasdfads" src="https://github.com/user-attachments/assets/23d2cfb6-7a38-4c3e-9353-8d680945cf1f" />
 
 # Comns Santa Barbara (sb-coms)
 App nativa para Windows y Linux de comunicación por "pulsar para hablar" para misiones de artillería.
